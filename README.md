@@ -23,3 +23,5 @@ myRunnable.withPriority(3).withThreadName("My Awesome Runnable Thread");
 Other thread modifications include `asDaemon()` and `withExceptionHandling(UncaughtExceptionHandler)`.
 
 ExtendableCallable and ExtendableRunanble implement the Callable and Runnable interfaces, respectively, so they can be passed into anything that takes a Callable or Runnable.
+
+NOTE: documentation and testing not completed
