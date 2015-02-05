@@ -25,5 +25,10 @@ public class ExtendableRunnable implements Runnable
 		return ExceptionHandlingRunnable.from(this, exHandler);
 	}
 	
+	public ExtendableRunnable withPriority(int priority)
+	{
+		return WithPriorityRunnable.withPriority(this, priority);
+	}
+	
 	private final Runnable extendedRunnable;
 }

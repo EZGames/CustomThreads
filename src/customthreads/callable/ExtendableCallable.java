@@ -32,5 +32,10 @@ public class ExtendableCallable<V> implements Callable<V>
 		return AsDaemonCallable.asDaemon(this);
 	}
 	
+	public ExtendableCallable<V> withPriority(int priority)
+	{
+		return WithPriorityCallable.withPriority(this, priority);
+	}
+	
 	private final Callable<V> extendedCallable;
 }
